@@ -2,5 +2,7 @@
 <form method = "post">
     {% csrf_token %}
     {{ form.as_p }}
+    <p> <Strong> Output: </Strong> <pre> {{ submission.output_data }} </pre> </p>
     <button type = "submit" > Run Code </button>
+    <button type = "submit" > Submit </button>
 </form>
